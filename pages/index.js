@@ -7,9 +7,13 @@ export default function Home() {
   return (
     <main className={styles.container}>
       <section>
-        <span>{counter}</span>
-        <button onClick={increase}>+1</button>
-        <button onClick={decrease}>-1</button>
+        <span data-testid="counter-value">{counter}</span>
+        <button onClick={increase} title="increase counter">
+          +1
+        </button>
+        <button onClick={decrease} title="decrease counter">
+          -1
+        </button>
       </section>
     </main>
   );
